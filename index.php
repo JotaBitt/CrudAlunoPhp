@@ -1,8 +1,8 @@
     <?php
       $msg="";
-        //error_reporting(0);
+        error_reporting(0);
 
-            if ($_SERVER['REQUEST_METHOD'] == 'POST') /* informa o servidor que o metodo que esta sendo atribuido é tipo POST */{
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 
                 $aluno = $_POST["aluno"];
                 $email = $_POST["email"];
@@ -33,7 +33,6 @@
 <body>
     <h1>Registro de aluno</h1>
     <form action="index.php" method="POST">      
-        <!--conteúdo para adicionar informações do aluno-->
         Nome do Aluno: <input type="text" name="aluno" id="aluno" placeholder="João Pedro">
         <br><br>
         Email: <input type="email" name="email" id="email" placeholder="joao@gmail.com">
